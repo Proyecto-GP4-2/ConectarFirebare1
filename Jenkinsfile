@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-                sh './gradlew clean '
+                sh './gradlew clean sonarqube'
             }
         }
        
